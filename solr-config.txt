@@ -1,0 +1,47 @@
+curl --user solr:SolrRocks -X POST -H 'Content-type:application/json' --data-binary '{"add-field":{"name":"inst_name", "type":"text_general", "multiValued":false, "stored":true}}' http://localhost:8983/solr/slims/schema
+
+curl --user solr:SolrRocks -X POST -H 'Content-type:application/json' --data-binary '{"add-field":{"name":"unit_name", "type":"text_general", "multiValued":false, "stored":true}}' http://localhost:8983/solr/slims/schema
+
+curl --user solr:SolrRocks -X POST -H 'Content-type:application/json' --data-binary '{"add-field":{"name":"coll_name", "type":"text_general", "multiValued":false, "stored":true}}' http://localhost:8983/solr/slims/schema
+
+curl --user solr:SolrRocks -X POST -H 'Content-type:application/json' --data-binary '{"add-field":{"name":"biblio_id", "type":"text_general", "multiValued":false, "stored":true}}' http://localhost:8983/solr/slims/schema
+
+curl --user solr:SolrRocks -X POST -H 'Content-type:application/json' --data-binary '{"add-field":{"name":"title", "type":"text_general", "multiValued":false, "stored":true}}' http://localhost:8983/solr/slims/schema
+
+curl --user solr:SolrRocks -X POST -H 'Content-type:application/json' --data-binary '{"add-field":{"name":"edition", "type":"text_general", "multiValued":false, "stored":true}}' http://localhost:8983/solr/slims/schema
+
+curl --user solr:SolrRocks -X POST -H 'Content-type:application/json' --data-binary '{"add-field":{"name":"publish_year", "type":"text_general", "multiValued":false, "stored":true}}' http://localhost:8983/solr/slims/schema
+
+curl --user solr:SolrRocks -X POST -H 'Content-type:application/json' --data-binary '{"add-field":{"name":"gmd_name", "type":"text_general", "multiValued":false, "stored":true}}' http://localhost:8983/solr/slims/schema
+
+curl --user solr:SolrRocks -X POST -H 'Content-type:application/json' --data-binary '{"add-field":{"name":"isbn_issn", "type":"text_general", "multiValued":false, "stored":true}}' http://localhost:8983/solr/slims/schema
+
+curl --user solr:SolrRocks -X POST -H 'Content-type:application/json' --data-binary '{"add-field":{"name":"publisher_name", "type":"text_general", "multiValued":false, "stored":true}}' http://localhost:8983/solr/slims/schema
+
+curl --user solr:SolrRocks -X POST -H 'Content-type:application/json' --data-binary '{"add-field":{"name":"language_name", "type":"text_general", "multiValued":false, "stored":true}}' http://localhost:8983/solr/slims/schema
+
+curl --user solr:SolrRocks -X POST -H 'Content-type:application/json' --data-binary '{"add-field":{"name":"collation", "type":"text_general", "multiValued":false, "stored":true}}' http://localhost:8983/solr/slims/schema
+
+curl --user solr:SolrRocks -X POST -H 'Content-type:application/json' --data-binary '{"add-field":{"name":"series_title", "type":"text_general", "multiValued":false, "stored":true}}' http://localhost:8983/solr/slims/schema
+
+curl --user solr:SolrRocks -X POST -H 'Content-type:application/json' --data-binary '{"add-field":{"name":"call_number", "type":"text_general", "multiValued":false, "stored":true}}' http://localhost:8983/solr/slims/schema
+
+curl --user solr:SolrRocks -X POST -H 'Content-type:application/json' --data-binary '{"add-field":{"name":"classification", "type":"text_general", "multiValued":false, "stored":true}}' http://localhost:8983/solr/slims/schema
+
+curl --user solr:SolrRocks -X POST -H 'Content-type:application/json' --data-binary '{"add-field":{"name":"image", "type":"text_general", "multiValued":false, "stored":true}}' http://localhost:8983/solr/slims/schema
+
+curl --user solr:SolrRocks -X POST -H 'Content-type:application/json' --data-binary '{"add-field":{"name":"promoted", "type":"text_general", "multiValued":false, "stored":true}}' http://localhost:8983/solr/slims/schema
+
+curl --user solr:SolrRocks -X POST -H 'Content-type:application/json' --data-binary '{"add-field":{"name":"opac_hide", "type":"text_general", "multiValued":false, "stored":true}}' http://localhost:8983/solr/slims/schema
+
+curl --user solr:SolrRocks -X POST -H 'Content-type:application/json' --data-binary '{"add-field":{"name":"input_date", "type":"text_general", "multiValued":false, "stored":true}}' http://localhost:8983/solr/slims/schema
+
+curl --user solr:SolrRocks -X POST -H 'Content-type:application/json' --data-binary '{"add-field":{"name":"last_update", "type":"text_general", "multiValued":false, "stored":true}}' http://localhost:8983/solr/slims/schema
+
+curl --user solr:SolrRocks -X POST -H 'Content-type:application/json' --data-binary '{"add-field":{"name":"authors.name", "type":"text_general", "multiValued":true, "stored":true}}' http://localhost:8983/solr/slims/schema
+
+curl --user solr:SolrRocks -X POST -H 'Content-type:application/json' --data-binary '{"add-field":{"name":"subjects.name", "type":"text_general", "multiValued":true, "stored":true}}' http://localhost:8983/solr/slims/schema
+
+curl --user solr:SolrRocks -X POST -H 'Content-type:application/json' --data-binary '{"add-field":{"name":"items.item_code", "type":"text_general", "multiValued":true, "stored":true}}' http://localhost:8983/solr/slims/schema
+
+curl --user solr:SolrRocks -X POST -H 'Content-type:application/json' --data-binary '{"add-copy-field" : {"source":"*","dest":"_text_"}}' http://localhost:8983/solr/slims/schema

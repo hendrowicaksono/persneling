@@ -1,0 +1,103 @@
+object(stdClass)#8 (26) {
+  ["biblio_id"]=>
+  int(1)
+  ["title"]=>
+  string(17) "PHP 5 for dummies"
+  ["sor"]=>
+  string(0) ""
+  ["gmd_name"]=>
+  string(4) "Text"
+  ["edition"]=>
+  string(0) ""
+  ["isbn_issn"]=>
+  string(10) "0764541668"
+  ["publisher_name"]=>
+  string(5) "Wiley"
+  ["publish_year"]=>
+  string(4) "2004"
+  ["language_name"]=>
+  string(7) "English"
+  ["collation"]=>
+  string(27) "xiv, 392 p. : ill. ; 24 cm."
+  ["series_title"]=>
+  string(11) "For dummies"
+  ["call_number"]=>
+  string(17) "005.13/3-22 Jan p"
+  ["source"]=>
+  NULL
+  ["place"]=>
+  string(11) "Hoboken, NJ"
+  ["classification"]=>
+  string(11) "005.13/3 22"
+  ["notes"]=>
+  string(0) ""
+  ["image"]=>
+  string(16) "php5_dummies.jpg"
+  ["promoted"]=>
+  int(0)
+  ["opac_hide"]=>
+  int(0)
+  ["spec_detail_info"]=>
+  string(0) ""
+  ["input_date"]=>
+  string(19) "2007-11-29 15:36:50"
+  ["last_update"]=>
+  string(19) "2018-05-13 09:26:43"
+  ["uid"]=>
+  NULL
+  ["authors"]=>
+  array(1) {
+    [0]=>
+    array(3) {
+      ["name"]=>
+      string(13) "Valade, Janet"
+      ["authority_type"]=>
+      string(1) "p"
+      ["authority_level"]=>
+      int(1)
+    }
+  }
+  ["subjects"]=>
+  array(2) {
+    [0]=>
+    array(3) {
+      ["name"]=>
+      string(11) "Programming"
+      ["topic_type"]=>
+      string(1) "t"
+      ["topic_level"]=>
+      int(1)
+    }
+    [1]=>
+    array(3) {
+      ["name"]=>
+      string(7) "Website"
+      ["topic_type"]=>
+      string(1) "t"
+      ["topic_level"]=>
+      int(2)
+    }
+  }
+  ["items"]=>
+  array(2) {
+    [0]=>
+    array(3) {
+      ["item_code"]=>
+      string(6) "B00016"
+      ["coll_type_name"]=>
+      string(9) "Reference"
+      ["site"]=>
+      string(0) ""
+    }
+    [1]=>
+    array(3) {
+      ["item_code"]=>
+      string(6) "B00019"
+      ["coll_type_name"]=>
+      string(9) "Reference"
+      ["site"]=>
+      string(0) ""
+    }
+  }
+}
+{"biblio_id":1,"title":"PHP 5 for dummies","sor":"","gmd_name":"Text","edition":"","isbn_issn":"0764541668","publisher_name":"Wiley","publish_year":"2004","language_name":"English","collation":"xiv, 392 p. : ill. ; 24 cm.","series_title":"For dummies","call_number":"005.13\/3-22 Jan p","source":null,"place":"Hoboken, NJ","classification":"005.13\/3 22","notes":"","image":"php5_dummies.jpg","promoted":0,"opac_hide":0,"spec_detail_info":"","input_date":"2007-11-29 15:36:50","last_update":"2018-05-13 09:26:43","uid":null,"authors":[{"name":"Valade, Janet","authority_type":"p","authority_level":1}],"subjects":[{"name":"Programming","topic_type":"t","topic_level":1},{"name":"Website","topic_type":"t","topic_level":2}],"items":[{"item_code":"B00016","coll_type_name":"Reference","site":""},{"item_code":"B00019","coll_type_name":"Reference","site":""}]}

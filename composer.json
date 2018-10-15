@@ -25,7 +25,8 @@
   "minimum-stability": "stable",
 
   "require": {
-    "vlucas/valitron": "^1.2"
+    "vlucas/valitron": "^1.2",
+    "nategood/httpful": "*"
   },
 
   "require-dev": {

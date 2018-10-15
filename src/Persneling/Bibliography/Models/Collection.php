@@ -3,6 +3,7 @@ namespace Slims\Persneling\Bibliography\Models;
 use Slims\Persneling\Masterfile\Models\Gmd as GMD;
 use Slims\Persneling\Masterfile\Models\Publisher as Publisher;
 use Slims\Persneling\Masterfile\Models\Place as Place;
+use Slims\Persneling\Masterfile\Models\Language as Language;
 use Slims\Persneling\Masterfile\Models\Author as Author;
 use Slims\Persneling\Masterfile\Models\Subject as Subject;
 use Slims\Persneling\Bibliography\Models\Item as Item;
@@ -22,6 +23,8 @@ class Collection
     $_publisher_id = $publisher->fgetPublisherIdByName($dbs, $col->publisher_name);
     $place = new Place;
     $_place_id = $place->fgetPlaceIdByName($dbs, $col->place);
+    $language = new Language;
+    $_language_id = $language->fgetLanguageIdByName($dbs, $col->language_name);
     $is_new = TRUE;
     if ((!empty($col->biblio_id)) OR (isset($col->biblio_id))) {
       if ($this->collection_load($dbs, $col->biblio_id)) {
@@ -49,11 +52,14 @@ class Collection
       collation,
       series_title,
       call_number,
+      language_id,
       source,
       publish_place_id,
       classification,
       notes,
       image,
+      promoted,
+      opac_hide,
       spec_detail_info,
       input_date,
       last_update,
@@ -70,11 +76,14 @@ class Collection
       \''.addslashes($col->collation).'\',
       \''.addslashes($col->series_title).'\',
       \''.addslashes($col->call_number).'\',
+      \''.addslashes($_language_id).'\',
       \''.addslashes($col->source).'\',
       \''.addslashes($_place_id).'\',
       \''.addslashes($col->classification).'\',
       \''.addslashes($col->notes).'\',
       \''.addslashes($col->image).'\',
+      \''.addslashes($col->promoted).'\',
+      \''.addslashes($col->opac_hide).'\',
       \''.addslashes($col->spec_detail_info).'\',
       \''.addslashes($col->input_date).'\',
       \''.addslashes($col->last_update).'\',
@@ -140,7 +149,15 @@ class Collection
     #$sBiblio .= 'WHERE b.biblio_id=\''.$cid.'\' ';
     #$sBiblio .= 'AND b.gmd_id=gmd.gmd_id';
 
-    $sBiblio = 'SELECT b.*,gmd.*,pub.*,lan.*, pla.*, fre.*, cot.*, met.*, cat.* ';
+    #$sBiblio = 'SELECT b.*,gmd.*,pub.*,lan.*, pla.*, fre.*, cot.*, met.*, cat.* ';
+    $sBiblio = 'SELECT b.*, gmd.gmd_id, gmd.gmd_code, gmd.gmd_name, ';
+    $sBiblio .= 'pub.publisher_id, pub.publisher_name, ';
+    $sBiblio .= 'lan.language_id, lan.language_name, ';
+    $sBiblio .= 'pla.place_id, pla.place_name, ';
+    $sBiblio .= 'fre.frequency_id, fre.frequency, ';
+    $sBiblio .= 'cot.content_type, cot.code, cot.code2, ';
+    $sBiblio .= 'met.media_type, met.code, met.code2, ';
+    $sBiblio .= 'cat.carrier_type, cat.code, cat.code2 ';
     $sBiblio .= 'FROM biblio AS b ';
     $sBiblio .= 'LEFT JOIN mst_gmd AS gmd ';
     $sBiblio .= 'ON b.gmd_id=gmd.gmd_id ';
@@ -159,9 +176,11 @@ class Collection
     $sBiblio .= 'LEFT JOIN mst_carrier_type AS cat ';
     $sBiblio .= 'ON b.carrier_type_id=cat.id ';
     $sBiblio .= 'WHERE b.biblio_id=\''.$cid.'\'';
+    #die($sBiblio);
     $qBiblio = $dbs->query($sBiblio);
     if ($qBiblio->rowCount() > 0) {
       $rBiblio = $qBiblio->fetch(\PDO::FETCH_ASSOC);
+      #var_dump($rBiblio);die();
       $coll['biblio_id'] = $rBiblio['biblio_id'];
       $coll['title'] = $rBiblio['title'];
       $coll['sor'] = $rBiblio['sor'];
@@ -170,6 +189,7 @@ class Collection
       $coll['isbn_issn'] = $rBiblio['isbn_issn'];
       $coll['publisher_name'] = $rBiblio['publisher_name'];
       $coll['publish_year'] = $rBiblio['publish_year'];
+      $coll['language_name'] = $rBiblio['language_name'];
       $coll['collation'] = $rBiblio['collation'];
       $coll['series_title'] = $rBiblio['series_title'];
       $coll['call_number'] = $rBiblio['call_number'];
@@ -177,8 +197,14 @@ class Collection
       $coll['place'] = $rBiblio['place_name'];
       $coll['classification'] = $rBiblio['classification'];
       $coll['notes'] = $rBiblio['notes'];
+      $coll['image'] = $rBiblio['image'];
+      $coll['promoted'] = $rBiblio['promoted'];
+      $coll['opac_hide'] = $rBiblio['opac_hide'];
       $coll['spec_detail_info'] = $rBiblio['spec_detail_info'];
+      $coll['input_date'] = $rBiblio['input_date'];
+      $coll['last_update'] = $rBiblio['last_update'];
       $coll['uid'] = $rBiblio['uid'];
+      #var_dump($coll);die();
       ########### AUTHORS #############
       $coll['authors'] = NULL;
       #$sAuthor = 'SELECT b.biblio_id, ba.level, a.* ';

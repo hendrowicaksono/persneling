@@ -41,7 +41,10 @@ class Collection
     $this->set_place();
     $this->set_classification();
     $this->set_notes();
+    $this->set_languageName();
     $this->set_image();
+    $this->set_promoted();
+    $this->set_opacHide();
     $this->set_specDetailInfo();
     $this->set_inputDate();
     $this->set_lastUpdate();
@@ -53,7 +56,7 @@ class Collection
 
   protected function get_newColl()
   {
-    return (object) $this->coll;
+    return $this->coll;
   }
 
   protected function set_biblioId($biblio_id)
@@ -131,9 +134,24 @@ class Collection
     $this->coll['notes'] = $notes;
   }
 
+  protected function set_languageName($language_name=NULL)
+  {
+    $this->coll['language_name'] = $language_name;
+  }
+
   protected function set_image($image=NULL)
   {
     $this->coll['image'] = $image;
+  }
+
+  protected function set_promoted($promoted=0)
+  {
+    $this->coll['promoted'] = $promoted;
+  }
+
+  protected function set_opacHide($opac_hide=0)
+  {
+    $this->coll['opac_hide'] = $opac_hide;
   }
 
   protected function set_specDetailInfo($spec_detail_info=NULL)
@@ -177,11 +195,11 @@ class Collection
     $this->set_cid($cid);
     if (is_null($this->get_cid())) {
       $this->set_newColl();
-      return $this->get_newColl();
+      return (object) $this->get_newColl();
     } else {
       #echo 'Edit Buku';
       $mc = new MC;
-      return $mc->collection_load($dbs, $cid);
+      return (object) $mc->collection_load($dbs, $cid);
     }
   }
 

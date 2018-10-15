@@ -1,7 +1,8 @@
 <?php 
 require "vendor/autoload.php";
 
-$dbs = new PDO('mysql:host=localhost; dbname=dbname; charset=utf8mb4', 'dbusername', 'dbpassword');
+#$dbs = new PDO('mysql:host=localhost; dbname=dbname; charset=utf8mb4', 'dbusername', 'dbpassword');
+$dbs = new PDO('mysql:host=localhost; dbname=demo2_slims8akasia; charset=utf8mb4', 'root', 's0beautifulday');
 $dbs->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $dbs->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 
@@ -9,10 +10,18 @@ use Slims\Persneling\Bibliography\Collection as C;
  
 $koleksi = new C;
 
-$data = $koleksi->collection_load();
+$data = $koleksi->collection_load($dbs, '1');
+
+#debug
+#echo '<pre>';
+#var_dump($data);
+#echo '</pre>';
+#die();
+
+
 
 #$data->biblio_id = 1;
-$data->title = 'PHP for librarian 3';
+$data->title = 'PHP for librarian 8';
 $data->sor = 'Hendro Wicaksono 3';
 $data->gmd_name = 'Tesis';
 $data->edition = '2nd ed.';
@@ -22,10 +31,12 @@ $data->publish_year = '2016';
 $data->collation = 'xii, 500 p. ill.';
 $data->series_title = 'Seri cepat kaya melalui internet';
 $data->call_number = '330.05 AWK i';
+$data->language_name = 'Arab';
 $data->source = 'source disini';
 $data->place = 'Jakarta';
 $data->classification = '330.05';
 $data->notes = 'Disini adalah catatan alias notes.';
+#$data->image = NULL;
 $data->spec_detail_info = 'spec_detail_info disini';
 $data->uid = '1';
 #$data->authors = NULL;

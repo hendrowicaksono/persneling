@@ -1,8 +1,7 @@
 <?php 
 require "vendor/autoload.php";
 
-#$dbs = new PDO('mysql:host=localhost; dbname=dbname; charset=utf8mb4', 'dbusername', 'dbpassword');
-$dbs = new PDO('mysql:host=localhost; dbname=demo2_slims8akasia; charset=utf8mb4', 'root', 's0beautifulday');
+$dbs = new PDO('mysql:host=localhost; dbname=yourslimsdb; charset=utf8mb4', 'dbuser', 'dbpassword');
 $dbs->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $dbs->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 
@@ -17,8 +16,6 @@ $data = $koleksi->collection_load($dbs, '1');
 #var_dump($data);
 #echo '</pre>';
 #die();
-
-
 
 #$data->biblio_id = 1;
 $data->title = 'PHP for librarian 8';

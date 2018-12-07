@@ -346,19 +346,69 @@ class Item
   public function getItemsListByBiblioId($dbs, $biblio_id)
   {
     $items = array();
-    $sItem = 'SELECT i.*, ct.* ';
-    $sItem .= 'FROM item AS i, mst_coll_type AS ct ';
+    #$sItem = 'SELECT i.*, ct.*, loc.* ';
+    #$sItem .= 'FROM item AS i, mst_coll_type AS ct, mst_location AS loc ';
+    #$sItem .= 'WHERE ';
+    #$sItem .= 'biblio_id=\''.$biblio_id.'\' ';
+    #$sItem .= 'AND i.coll_type_id=ct.coll_type_id ';
+    #$sItem .= 'AND i.location_id=loc.location_id ';
+
+    $sItem = 'SELECT i.*, ct.*, loc.*, mis.*, msp.* ';
+    $sItem .= 'FROM item AS i ';
+    $sItem .= 'LEFT JOIN ';
+    $sItem .= 'mst_coll_type AS ct ';
+    $sItem .= 'ON i.coll_type_id=ct.coll_type_id ';
+    $sItem .= 'LEFT JOIN ';
+    $sItem .= 'mst_location AS loc ';
+    $sItem .= 'ON i.location_id=loc.location_id ';
+    $sItem .= 'LEFT JOIN ';
+    $sItem .= 'mst_item_status AS mis ';
+    $sItem .= 'ON i.item_status_id=mis.item_status_id ';
+
+    $sItem .= 'LEFT JOIN ';
+    $sItem .= 'mst_supplier AS msp ';
+    $sItem .= 'ON i.supplier_id=msp.supplier_id ';
+
     $sItem .= 'WHERE ';
     $sItem .= 'biblio_id=\''.$biblio_id.'\' ';
-    $sItem .= 'AND i.coll_type_id=ct.coll_type_id';
 
     $qItem = $dbs->query($sItem);
     if ($qItem->rowCount() > 0) {
       $rItem = $qItem->fetchAll(\PDO::FETCH_ASSOC);
       foreach ($rItem as $key => $value) {
+        #var_dump($value); die('disini');
+        $items[$key]['item_id'] = $value['item_id'];
         $items[$key]['item_code'] = $value['item_code'];
+        $items[$key]['call_number'] = $value['call_number'];
         $items[$key]['coll_type_name'] = $value['coll_type_name'];
-        $items[$key]['site'] = $value['site'];
+        $items[$key]['shelf_location'] = $value['site'];
+        $items[$key]['location_name'] = $value['location_name'];
+        $items[$key]['inventory_code'] = $value['inventory_code'];
+        if (is_null($value['item_status_name'])) {
+          $items[$key]['item_status'] = 'Available';
+        } else {
+          $items[$key]['item_status'] = $value['item_status_name'];
+        }
+        $items[$key]['order_number'] = $value['order_no'];
+        $items[$key]['order_date'] = $value['order_date'];
+        $items[$key]['received_date'] = $value['received_date'];
+        $items[$key]['supplier'] = $value['supplier_name'];
+        if ($value['source'] == '1') {
+          $items[$key]['source'] = 'Buy';
+        } elseif ($value['source'] == '2') {
+          $items[$key]['source'] = 'Prize/Grant';
+        } else {
+          $items[$key]['source'] = null;          
+        }
+        $items[$key]['invoice'] = $value['invoice'];
+        $items[$key]['invoice_date'] = $value['invoice_date'];
+        $items[$key]['price'] = $value['price'];
+        $items[$key]['price_currency'] = $value['price_currency'];
+        $items[$key]['input_date'] = $value['input_date'];
+        $items[$key]['last_update'] = $value['last_update'];
+
+        $items[$key]['uid'] = $value['uid'];
+
       }
     }
     return $items;

@@ -180,7 +180,8 @@ class Collection
     $qBiblio = $dbs->query($sBiblio);
     if ($qBiblio->rowCount() > 0) {
       $rBiblio = $qBiblio->fetch(\PDO::FETCH_ASSOC);
-      #var_dump($rBiblio);die();
+      #var_dump($rBiblio['uid']);die();
+      #var_dump(unserialize($rBiblio['labels'])); die();
       $coll['biblio_id'] = $rBiblio['biblio_id'];
       $coll['title'] = $rBiblio['title'];
       $coll['sor'] = $rBiblio['sor'];
@@ -199,6 +200,13 @@ class Collection
       $coll['notes'] = $rBiblio['notes'];
       $coll['image'] = $rBiblio['image'];
       $coll['promoted'] = $rBiblio['promoted'];
+      $coll['labels'] = unserialize($rBiblio['labels']);
+      $coll['frequency'] = $rBiblio['frequency'];
+
+      $coll['content_type'] = $rBiblio['content_type'];
+      $coll['media_type'] = $rBiblio['media_type'];
+      $coll['carrier_type'] = $rBiblio['carrier_type'];
+
       $coll['opac_hide'] = $rBiblio['opac_hide'];
       $coll['spec_detail_info'] = $rBiblio['spec_detail_info'];
       $coll['input_date'] = $rBiblio['input_date'];

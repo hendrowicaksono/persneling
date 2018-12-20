@@ -1,0 +1,73 @@
+{
+    "biblio_id": 13,
+    "title": "Corruption and development : the anti-corruption campaigns",
+    "sor": null,
+    "gmd_name": "Text",
+    "edition": null,
+    "isbn_issn": "0230525504",
+    "publisher_name": "Palgrave Macmillan",
+    "publish_year": "2007",
+    "language_name": "English",
+    "collation": "310p.",
+    "series_title": null,
+    "call_number": "364.1 Bra c",
+    "source": null,
+    "place": "New York",
+    "classification": "364.1\/323091724 22",
+    "notes": "This book provides a multidisciplinary interrogation of the global anti-corruption campaigns of the last ten years, arguing that while some positive change is observable, the period is also replete with perverse consequences and unintended outcomes",
+    "image": "corruption_development_anti_campaign.jpg",
+    "promoted": 0,
+    "labels": false,
+    "frequency": null,
+    "content_type": null,
+    "media_type": null,
+    "carrier_type": null,
+    "opac_hide": 0,
+    "spec_detail_info": null,
+    "input_date": "2007-11-29 17:49:49",
+    "last_update": "2007-11-29 16:19:48",
+    "uid": null,
+    "authors": [
+        {
+            "name": "Bracking, Sarah",
+            "authority_type": "p",
+            "authority_level": 1
+        }
+    ],
+    "subjects": [
+        {
+            "name": "Corruption",
+            "topic_type": "t",
+            "topic_level": 1
+        }
+    ],
+    "items": [
+        {
+            "item_id": 5,
+            "item_code": "B00005",
+            "call_number": null,
+            "coll_type_name": "Reference",
+            "shelf_location": "",
+            "location_name": "My Library",
+            "inventory_code": "INV\/B00005",
+            "item_status": "Available",
+            "order_number": "",
+            "order_date": "0000-00-00",
+            "received_date": "0000-00-00",
+            "supplier": null,
+            "source": "Prize\/Grant",
+            "invoice": "",
+            "invoice_date": "0000-00-00",
+            "price": 0,
+            "price_currency": null,
+            "input_date": null,
+            "last_update": null,
+            "uid": null
+        }
+    ],
+    "inst_name": "kemdikbud",
+    "unit_name": "perpustakaan_pusat",
+    "coll_name": "opac",
+    "id": 13,
+    "_id": 13
+}

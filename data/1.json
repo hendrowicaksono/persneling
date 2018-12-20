@@ -1,0 +1,55 @@
+{
+    "biblio_id": 1,
+    "title": "PHP 5 for dummies",
+    "sor": null,
+    "gmd_name": "Text",
+    "edition": null,
+    "isbn_issn": "0764541668",
+    "publisher_name": "Wiley",
+    "publish_year": "2004",
+    "language_name": "English",
+    "collation": "xiv, 392 p. : ill. ; 24 cm.",
+    "series_title": "For dummies",
+    "call_number": "005.13\/3-22 Jan p",
+    "source": null,
+    "place": "Hoboken, NJ",
+    "classification": "005.13\/3 22",
+    "notes": null,
+    "image": "php5_dummies.jpg",
+    "promoted": 0,
+    "labels": false,
+    "frequency": null,
+    "content_type": null,
+    "media_type": null,
+    "carrier_type": null,
+    "opac_hide": 0,
+    "spec_detail_info": null,
+    "input_date": "2007-11-29 15:36:50",
+    "last_update": "2007-11-29 16:26:59",
+    "uid": null,
+    "authors": [
+        {
+            "name": "Valade, Janet",
+            "authority_type": "p",
+            "authority_level": 1
+        }
+    ],
+    "subjects": [
+        {
+            "name": "Programming",
+            "topic_type": "t",
+            "topic_level": 1
+        },
+        {
+            "name": "Website",
+            "topic_type": "t",
+            "topic_level": 2
+        }
+    ],
+    "items": [],
+    "inst_name": "kemdikbud",
+    "unit_name": "perpustakaan_pusat",
+    "coll_name": "opac",
+    "id": 1,
+    "_id": 1
+}

@@ -1,0 +1,65 @@
+{
+    "biblio_id": 3,
+    "title": "The Definitive Guide to MySQL 5",
+    "sor": null,
+    "gmd_name": "Text",
+    "edition": null,
+    "isbn_issn": "9781590595350",
+    "publisher_name": "Apress",
+    "publish_year": "2005",
+    "language_name": "English",
+    "collation": "784p.",
+    "series_title": "Definitive Guide Series",
+    "call_number": "005.75\/85-22 Kof d",
+    "source": null,
+    "place": null,
+    "classification": "005.75\/85 22",
+    "notes": null,
+    "image": "mysql_def_guide.jpg",
+    "promoted": 0,
+    "labels": false,
+    "frequency": null,
+    "content_type": null,
+    "media_type": null,
+    "carrier_type": null,
+    "opac_hide": 0,
+    "spec_detail_info": null,
+    "input_date": "2007-11-29 16:01:08",
+    "last_update": "2007-11-29 16:26:33",
+    "uid": null,
+    "authors": [
+        {
+            "name": "Kofler, Michael",
+            "authority_type": "p",
+            "authority_level": 1
+        },
+        {
+            "name": "Kramer, David",
+            "authority_type": "p",
+            "authority_level": 2
+        }
+    ],
+    "subjects": [
+        {
+            "name": "Programming",
+            "topic_type": "t",
+            "topic_level": 1
+        },
+        {
+            "name": "Database",
+            "topic_type": "t",
+            "topic_level": 2
+        },
+        {
+            "name": "RDBMS",
+            "topic_type": "t",
+            "topic_level": 2
+        }
+    ],
+    "items": [],
+    "inst_name": "kemdikbud",
+    "unit_name": "perpustakaan_pusat",
+    "coll_name": "opac",
+    "id": 3,
+    "_id": 3
+}

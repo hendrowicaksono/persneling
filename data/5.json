@@ -1,0 +1,55 @@
+{
+    "biblio_id": 5,
+    "title": "Producing open source software : how to run a successful free software project",
+    "sor": null,
+    "gmd_name": "Text",
+    "edition": "1st ed.",
+    "isbn_issn": "9780596007591",
+    "publisher_name": "OReilly",
+    "publish_year": "2005",
+    "language_name": "English",
+    "collation": "xx, 279 p. ; 24 cm.",
+    "series_title": null,
+    "call_number": "005.1-22 Fog p",
+    "source": null,
+    "place": "Sebastopol, CA",
+    "classification": "005.1 22",
+    "notes": "Includes index.",
+    "image": "producing_oss.jpg",
+    "promoted": 0,
+    "labels": false,
+    "frequency": null,
+    "content_type": null,
+    "media_type": null,
+    "carrier_type": null,
+    "opac_hide": 0,
+    "spec_detail_info": null,
+    "input_date": "2007-11-29 16:20:45",
+    "last_update": "2007-11-29 16:31:21",
+    "uid": null,
+    "authors": [
+        {
+            "name": "Fogel, Karl",
+            "authority_type": "p",
+            "authority_level": 1
+        }
+    ],
+    "subjects": [
+        {
+            "name": "Open Source",
+            "topic_type": "t",
+            "topic_level": 1
+        },
+        {
+            "name": "Project",
+            "topic_type": "t",
+            "topic_level": 2
+        }
+    ],
+    "items": [],
+    "inst_name": "kemdikbud",
+    "unit_name": "perpustakaan_pusat",
+    "coll_name": "opac",
+    "id": 5,
+    "_id": 5
+}

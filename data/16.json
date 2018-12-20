@@ -1,0 +1,100 @@
+{
+    "biblio_id": 16,
+    "title": "Mengapa begini, mengapa begitu 2",
+    "sor": "Statement of Responsibility is here",
+    "gmd_name": "Text",
+    "edition": "Edition information is here",
+    "isbn_issn": "isbn issn here",
+    "publisher_name": "Palgrave Macmillan",
+    "publish_year": "2018",
+    "language_name": "Indonesia",
+    "collation": "collation is here",
+    "series_title": "series title here",
+    "call_number": "330 HAR p",
+    "source": null,
+    "place": "Jakarta",
+    "classification": "330",
+    "notes": "your abstract here",
+    "image": "984d3b68-ef90-45d3-9eba-92c397236034.jpeg.jpeg",
+    "promoted": 0,
+    "labels": false,
+    "frequency": null,
+    "content_type": "cartographic dataset",
+    "media_type": "computer",
+    "carrier_type": "computer card",
+    "opac_hide": 0,
+    "spec_detail_info": "spec detail info is here",
+    "input_date": "2018-12-05 12:23:34",
+    "last_update": "2018-12-13 14:11:26",
+    "uid": 1,
+    "authors": [
+        {
+            "name": "Fogel, Karl",
+            "authority_type": "p",
+            "authority_level": 1
+        }
+    ],
+    "subjects": [
+        {
+            "name": "Programming",
+            "topic_type": "t",
+            "topic_level": 1
+        },
+        {
+            "name": "Operating System",
+            "topic_type": "t",
+            "topic_level": 1
+        }
+    ],
+    "items": [
+        {
+            "item_id": 11,
+            "item_code": "BM000010",
+            "call_number": "330 HAR p",
+            "coll_type_name": "Reference",
+            "shelf_location": "shelf location here",
+            "location_name": "My Library",
+            "inventory_code": "invent code here",
+            "item_status": "Available",
+            "order_number": "order number is here",
+            "order_date": "2018-12-06",
+            "received_date": "2018-12-06",
+            "supplier": "Toko Buku Gramedia",
+            "source": "Buy",
+            "invoice": "invoice is here",
+            "invoice_date": "2018-12-06",
+            "price": 500000,
+            "price_currency": "Rupiah",
+            "input_date": "2018-12-08",
+            "last_update": "2018-12-08",
+            "uid": 1
+        },
+        {
+            "item_id": 12,
+            "item_code": "BM000011",
+            "call_number": "330 HAR p",
+            "coll_type_name": "Fiction",
+            "shelf_location": "another shef loc",
+            "location_name": "My Library",
+            "inventory_code": "invetory code here",
+            "item_status": "Repair",
+            "order_number": "order number here",
+            "order_date": "2018-12-08",
+            "received_date": "2018-12-08",
+            "supplier": null,
+            "source": "Prize\/Grant",
+            "invoice": "invoice here",
+            "invoice_date": "2018-12-08",
+            "price": 45000,
+            "price_currency": "Ruppee",
+            "input_date": null,
+            "last_update": null,
+            "uid": 1
+        }
+    ],
+    "inst_name": "kemdikbud",
+    "unit_name": "perpustakaan_pusat",
+    "coll_name": "opac",
+    "id": 16,
+    "_id": 16
+}

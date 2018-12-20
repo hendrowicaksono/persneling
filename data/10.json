@@ -1,0 +1,60 @@
+{
+    "biblio_id": 10,
+    "title": "Library and Information Center Management",
+    "sor": "",
+    "gmd_name": "Text",
+    "edition": "7th ed.",
+    "isbn_issn": "9781591584063",
+    "publisher_name": "Libraries Unlimited",
+    "publish_year": "2007",
+    "language_name": "English",
+    "collation": "xxviii, 492 p. : ill. ; 27 cm.",
+    "series_title": "Library and information science text series",
+    "call_number": "025.1-22 Stu l",
+    "source": null,
+    "place": "Westport, Conn.",
+    "classification": "025.1 22",
+    "notes": "",
+    "image": "library_info_center.JPG",
+    "promoted": 0,
+    "labels": false,
+    "frequency": null,
+    "content_type": null,
+    "media_type": null,
+    "carrier_type": null,
+    "opac_hide": 0,
+    "spec_detail_info": "",
+    "input_date": "2007-11-29 16:58:51",
+    "last_update": "2018-12-13 14:10:50",
+    "uid": null,
+    "authors": [
+        {
+            "name": "Stueart, Robert D.",
+            "authority_type": "p",
+            "authority_level": 1
+        },
+        {
+            "name": "Moran, Barbara B.",
+            "authority_type": "p",
+            "authority_level": 2
+        }
+    ],
+    "subjects": [
+        {
+            "name": "Information",
+            "topic_type": "t",
+            "topic_level": 1
+        },
+        {
+            "name": "Library",
+            "topic_type": "t",
+            "topic_level": 2
+        }
+    ],
+    "items": [],
+    "inst_name": "kemdikbud",
+    "unit_name": "perpustakaan_pusat",
+    "coll_name": "opac",
+    "id": 10,
+    "_id": 10
+}

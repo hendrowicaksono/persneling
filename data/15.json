@@ -1,0 +1,78 @@
+{
+    "biblio_id": 15,
+    "title": "Lords of poverty : the power, prestige, and corruption of the international aid business",
+    "sor": null,
+    "gmd_name": "Text",
+    "edition": null,
+    "isbn_issn": "9780871134691",
+    "publisher_name": "Atlantic Monthly Press",
+    "publish_year": "1994",
+    "language_name": "English",
+    "collation": "xvi, 234 p. ; 22 cm.",
+    "series_title": null,
+    "call_number": "338.9 Han l",
+    "source": null,
+    "place": "New York",
+    "classification": "338.9\/1\/091724 20",
+    "notes": "Lords of Poverty is a case study in betrayals of a public trust. The shortcomings of aid are numerous, and serious enough to raise questions about the viability of the practice at its most fundamental levels. Hancocks report is thorough, deeply shocking, and certain to cause critical reevaluation of the governments motives in giving foreign aid, and of the true needs of our intended beneficiaries.",
+    "image": "lords_of_poverty.jpg",
+    "promoted": 0,
+    "labels": false,
+    "frequency": null,
+    "content_type": null,
+    "media_type": null,
+    "carrier_type": null,
+    "opac_hide": 0,
+    "spec_detail_info": null,
+    "input_date": "2007-11-29 18:08:13",
+    "last_update": "2007-11-29 16:13:11",
+    "uid": null,
+    "authors": [
+        {
+            "name": "Hancock, Graham",
+            "authority_type": "p",
+            "authority_level": 1
+        }
+    ],
+    "subjects": [
+        {
+            "name": "Corruption",
+            "topic_type": "t",
+            "topic_level": 1
+        },
+        {
+            "name": "Poverty",
+            "topic_type": "t",
+            "topic_level": 2
+        }
+    ],
+    "items": [
+        {
+            "item_id": 3,
+            "item_code": "B00003",
+            "call_number": null,
+            "coll_type_name": "Reference",
+            "shelf_location": "",
+            "location_name": "My Library",
+            "inventory_code": "INV\/B00003",
+            "item_status": "Available",
+            "order_number": "",
+            "order_date": "0000-00-00",
+            "received_date": "0000-00-00",
+            "supplier": null,
+            "source": "Buy",
+            "invoice": "",
+            "invoice_date": "0000-00-00",
+            "price": 300000,
+            "price_currency": "Rupiah",
+            "input_date": null,
+            "last_update": null,
+            "uid": null
+        }
+    ],
+    "inst_name": "kemdikbud",
+    "unit_name": "perpustakaan_pusat",
+    "coll_name": "opac",
+    "id": 15,
+    "_id": 15
+}

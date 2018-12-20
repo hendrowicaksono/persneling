@@ -1,0 +1,60 @@
+{
+    "biblio_id": 9,
+    "title": "The organization of information",
+    "sor": null,
+    "gmd_name": "Text",
+    "edition": "2nd ed.",
+    "isbn_issn": "1563089769",
+    "publisher_name": "Libraries Unlimited",
+    "publish_year": "2004",
+    "language_name": "English",
+    "collation": "xxvii, 417 p. : ill. ; 27 cm.",
+    "series_title": "Library and information science text series",
+    "call_number": "025-22 Tay o",
+    "source": null,
+    "place": "Westport, Conn.",
+    "classification": "025 22",
+    "notes": "A basic textbook for students of library and information studies, and a guide for practicing school library media specialists. Describes the impact of global forces and the school district on the development and operation of a media center, the technical and human side of management, programmatic activities, supportive services to students, and the quality and quantity of resources available to support programs.",
+    "image": "organization_information.jpg",
+    "promoted": 0,
+    "labels": false,
+    "frequency": null,
+    "content_type": null,
+    "media_type": null,
+    "carrier_type": null,
+    "opac_hide": 0,
+    "spec_detail_info": null,
+    "input_date": "2007-11-29 16:54:12",
+    "last_update": "2007-11-29 16:27:20",
+    "uid": null,
+    "authors": [
+        {
+            "name": "Taylor, Arlene G.",
+            "authority_type": "p",
+            "authority_level": 1
+        }
+    ],
+    "subjects": [
+        {
+            "name": "Information",
+            "topic_type": "t",
+            "topic_level": 1
+        },
+        {
+            "name": "Organization",
+            "topic_type": "t",
+            "topic_level": 2
+        },
+        {
+            "name": "Metadata",
+            "topic_type": "t",
+            "topic_level": 2
+        }
+    ],
+    "items": [],
+    "inst_name": "kemdikbud",
+    "unit_name": "perpustakaan_pusat",
+    "coll_name": "opac",
+    "id": 9,
+    "_id": 9
+}

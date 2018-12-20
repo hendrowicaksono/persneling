@@ -1,0 +1,73 @@
+{
+    "biblio_id": 14,
+    "title": "Pigs at the trough : how corporate greed and political corruption are undermining America",
+    "sor": null,
+    "gmd_name": "Text",
+    "edition": null,
+    "isbn_issn": "1400047714",
+    "publisher_name": "Crown publishers",
+    "publish_year": "2003",
+    "language_name": "English",
+    "collation": "275 p. ; 22 cm.",
+    "series_title": null,
+    "call_number": "364.1323 Huf p",
+    "source": null,
+    "place": "New York",
+    "classification": "364.1323",
+    "notes": null,
+    "image": "pigs_at_trough.jpg",
+    "promoted": 0,
+    "labels": false,
+    "frequency": null,
+    "content_type": null,
+    "media_type": null,
+    "carrier_type": null,
+    "opac_hide": 0,
+    "spec_detail_info": null,
+    "input_date": "2007-11-29 17:56:00",
+    "last_update": "2007-11-29 16:18:33",
+    "uid": null,
+    "authors": [
+        {
+            "name": "Huffington, Arianna Stassinopoulos",
+            "authority_type": "p",
+            "authority_level": 1
+        }
+    ],
+    "subjects": [
+        {
+            "name": "Corruption",
+            "topic_type": "t",
+            "topic_level": 1
+        }
+    ],
+    "items": [
+        {
+            "item_id": 4,
+            "item_code": "B00004",
+            "call_number": null,
+            "coll_type_name": "Reference",
+            "shelf_location": "",
+            "location_name": "My Library",
+            "inventory_code": "INV\/B00004",
+            "item_status": "Available",
+            "order_number": "",
+            "order_date": "0000-00-00",
+            "received_date": "0000-00-00",
+            "supplier": null,
+            "source": "Buy",
+            "invoice": "",
+            "invoice_date": "0000-00-00",
+            "price": 250000,
+            "price_currency": "Rupiah",
+            "input_date": null,
+            "last_update": null,
+            "uid": null
+        }
+    ],
+    "inst_name": "kemdikbud",
+    "unit_name": "perpustakaan_pusat",
+    "coll_name": "opac",
+    "id": 14,
+    "_id": 14
+}

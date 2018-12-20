@@ -1,0 +1,49 @@
+{
+    "biblio_id": 11,
+    "title": "Information Architecture for the World Wide Web: Designing Large-Scale Web Sites",
+    "sor": null,
+    "gmd_name": "Text",
+    "edition": "2nd ed.",
+    "isbn_issn": "9780596000356",
+    "publisher_name": "OReilly",
+    "publish_year": "2002",
+    "language_name": "English",
+    "collation": "500p.",
+    "series_title": null,
+    "call_number": "006.7-22 Mor i",
+    "source": null,
+    "place": "Cambridge, Mass",
+    "classification": "006.7 22",
+    "notes": "Information Architecture for the World Wide Web is about applying the principles of architecture and library science to web site design. Each website is like a public building, available for tourists and regulars alike to breeze through at their leisure. The job of the architect is to set up the framework for the site to make it comfortable and inviting for people to visit, relax in, and perhaps even return to someday.",
+    "image": "information_arch.jpg",
+    "promoted": 0,
+    "labels": false,
+    "frequency": null,
+    "content_type": null,
+    "media_type": null,
+    "carrier_type": null,
+    "opac_hide": 0,
+    "spec_detail_info": null,
+    "input_date": "2007-11-29 17:26:14",
+    "last_update": "2007-11-29 16:32:25",
+    "uid": null,
+    "authors": [
+        {
+            "name": "Morville, Peter",
+            "authority_type": "p",
+            "authority_level": 1
+        },
+        {
+            "name": "Rosenfeld, Louis",
+            "authority_type": "p",
+            "authority_level": 2
+        }
+    ],
+    "subjects": [],
+    "items": [],
+    "inst_name": "kemdikbud",
+    "unit_name": "perpustakaan_pusat",
+    "coll_name": "opac",
+    "id": 11,
+    "_id": 11
+}

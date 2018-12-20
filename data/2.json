@@ -1,0 +1,125 @@
+{
+    "biblio_id": 2,
+    "title": "Linux In a Nutshell",
+    "sor": null,
+    "gmd_name": "Text",
+    "edition": "Fifth Edition",
+    "isbn_issn": "9780596009304",
+    "publisher_name": "OReilly",
+    "publish_year": "2005",
+    "language_name": "English",
+    "collation": "xiv, 925 p. : ill. ; 23 cm.",
+    "series_title": "In a Nutshell",
+    "call_number": "005.4\/32-22 Ell l",
+    "source": null,
+    "place": "Sebastopol, CA",
+    "classification": "005.4\/32 22",
+    "notes": null,
+    "image": "linux_in_a_nutshell.jpg",
+    "promoted": 0,
+    "labels": false,
+    "frequency": null,
+    "content_type": null,
+    "media_type": null,
+    "carrier_type": null,
+    "opac_hide": 0,
+    "spec_detail_info": null,
+    "input_date": "2007-11-29 15:53:35",
+    "last_update": "2007-11-29 16:26:10",
+    "uid": null,
+    "authors": [
+        {
+            "name": "Siever, Ellen",
+            "authority_type": "p",
+            "authority_level": 1
+        },
+        {
+            "name": "Love, Robert",
+            "authority_type": "p",
+            "authority_level": 2
+        },
+        {
+            "name": "Robbins, Arnold",
+            "authority_type": "p",
+            "authority_level": 2
+        },
+        {
+            "name": "Figgins, Stephen",
+            "authority_type": "p",
+            "authority_level": 2
+        },
+        {
+            "name": "Weber, Aaron",
+            "authority_type": "p",
+            "authority_level": 2
+        }
+    ],
+    "subjects": [
+        {
+            "name": "Operating System",
+            "topic_type": "t",
+            "topic_level": 1
+        },
+        {
+            "name": "Linux",
+            "topic_type": "t",
+            "topic_level": 2
+        },
+        {
+            "name": "Computer",
+            "topic_type": "t",
+            "topic_level": 2
+        }
+    ],
+    "items": [
+        {
+            "item_id": 9,
+            "item_code": "B00009",
+            "call_number": null,
+            "coll_type_name": "Reference",
+            "shelf_location": "",
+            "location_name": "My Library",
+            "inventory_code": "INV\/B00009",
+            "item_status": "Available",
+            "order_number": "",
+            "order_date": "0000-00-00",
+            "received_date": "0000-00-00",
+            "supplier": null,
+            "source": "Buy",
+            "invoice": "",
+            "invoice_date": "0000-00-00",
+            "price": 630000,
+            "price_currency": "Rupiah",
+            "input_date": null,
+            "last_update": null,
+            "uid": null
+        },
+        {
+            "item_id": 10,
+            "item_code": "B00010",
+            "call_number": null,
+            "coll_type_name": "Reference",
+            "shelf_location": "",
+            "location_name": "My Library",
+            "inventory_code": "INV\/B00010",
+            "item_status": "Available",
+            "order_number": "",
+            "order_date": "0000-00-00",
+            "received_date": "0000-00-00",
+            "supplier": null,
+            "source": "Buy",
+            "invoice": "",
+            "invoice_date": "0000-00-00",
+            "price": 630000,
+            "price_currency": "Rupiah",
+            "input_date": null,
+            "last_update": null,
+            "uid": null
+        }
+    ],
+    "inst_name": "kemdikbud",
+    "unit_name": "perpustakaan_pusat",
+    "coll_name": "opac",
+    "id": 2,
+    "_id": 2
+}

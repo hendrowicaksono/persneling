@@ -17,14 +17,22 @@ class Loan
 
   public function loanStatusByItem_load($dbs, $item_code)
   {
+    $item_code = addslashes($item_code);
     $loan_status = FALSE;
-    $sLoan = 'SELECT l.*, m.member_name ';
+    #$sLoan = 'SELECT l.*, m.member_name ';
+    #$sLoan .= 'FROM loan AS l ';
+    #$sLoan .= 'LEFT JOIN member AS m ON m.member_id=l.member_id ';
+    #$sLoan .= "WHERE item_code='".$item_code."' AND is_lent='1' AND is_return='0' ";
+    #$sLoan .= 'ORDER BY loan_id DESC LIMIT 0,1';
+
+    #$sLoan = 'SELECT l.*, i.*, m.* ';
+    $sLoan = 'SELECT l.* ';
+    #$sLoan .= 'FROM loan AS l, item AS i, member AS m ';
     $sLoan .= 'FROM loan AS l ';
-    $sLoan .= 'LEFT JOIN member AS m ON m.member_id=l.member_id ';
-    $sLoan .= "WHERE item_code='".$item_code."' AND is_lent='1' AND is_return='0' ";
-    #$sLoan .= "WHERE item_code='".$item_code."' ";
+    #$sLoan .= 'LEFT JOIN member AS m ON m.member_id=l.member_id ';
+    $sLoan .= "WHERE l.item_code='".$item_code."' AND is_lent='1' AND is_return='0' ";
+    #$sLoan .= "AND l.item_code=i.item_code ";
     $sLoan .= 'ORDER BY loan_id DESC LIMIT 0,1';
-    #$sLoan .= '';
 
     #die($sLoan);
     $qLoan = $dbs->query($sLoan);
@@ -40,11 +48,13 @@ class Loan
       $loan_status['renewed'] = $rLoan['renewed'];
       $loan_status['is_lent'] = $rLoan['is_lent'];
       $loan_status['is_return'] = $rLoan['is_return'];
-      $loan_status['return_date'] = $rLoan['return_date'];
-      $loan_status['member_name'] = $rLoan['member_name'];
+      #$loan_status['return_date'] = $rLoan['return_date'];
+      #$loan_status['member_name'] = $rLoan['member_name'];
 
       #var_dump($loan_status);die();
 
+    } else {
+      $loan_status = array();
     }
     return $loan_status;
   }
@@ -52,9 +62,10 @@ class Loan
   public function loanStatusByBiblioId_load($dbs, $biblio_id)
   {
     $loan_status = FALSE;
-    $sLoan = 'SELECT i.*, b.biblio_id, b.title, loc.location_name ';
+    #$sLoan = 'SELECT i.*, b.biblio_id, b.title, loc.location_name ';
+    $sLoan = 'SELECT i.*, b.biblio_id, b.title ';
     $sLoan .= 'FROM biblio AS b, item AS i ';
-    $sLoan .= 'LEFT JOIN mst_location AS loc ON i.location_id=loc.location_id ';
+    #$sLoan .= 'LEFT JOIN mst_location AS loc ON i.location_id=loc.location_id ';
     $sLoan .= "WHERE i.biblio_id=b.biblio_id AND b.biblio_id='".$biblio_id."' ";
     $sLoan .= 'ORDER BY item_code ASC';
     #$sLoan .= '';

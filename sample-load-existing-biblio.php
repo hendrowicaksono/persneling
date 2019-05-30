@@ -23,7 +23,7 @@ if (!isset($_GET['biblio_id'])) {
     #$dbs = new PDO('mysql:host=localhost; dbname=dbname; charset=utf8mb4', 'dbusername', 'dbpassword');
     #$dbs = new PDO('mysql:host=localhost; dbname=demo2_slims8akasia; charset=utf8mb4', 'root', 's0beautifulday');
     #$dbs = new PDO('mysql:host=localhost; dbname=library_ipc; charset=utf8mb4', 'root', 's0beautifulday');
-    $dbs = new PDO('mysql:host=172.17.0.2; dbname=slims8_akasia_dev_85; charset=utf8mb4', 'root', 'mypassword');
+    $dbs = new PDO('mysql:host=172.17.0.3; dbname=senayandb; charset=utf8mb4', 'root', 'mypassword');
     $dbs->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $dbs->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 

@@ -4,11 +4,9 @@ require "vendor/autoload.php";
 
 $es_host = 'localhost';
 $es_port = '9200';
-$es_index = 'uas_yarsi';
+$es_index = 'yourseindex';
 
-#$dbs = new PDO('mysql:host=localhost; dbname=demo_slims_8; charset=utf8mb4', 'demo_slims_8', 'demo_slims_8');
-#$dbs = new PDO('mysql:host=localhost; dbname=slims_uin_maliki; charset=utf8mb4', 'slims_uin_maliki', 'rahasialah');
-$dbs = new PDO('mysql:host=localhost; dbname=uas_yarsi; charset=utf8mb4', 'root', 's0beautifulday');
+$dbs = new PDO('mysql:host=localhost; dbname=yourdbname; charset=utf8mb4', 'dbuser', 'dbpassword');
 
 $dbs->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $dbs->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);

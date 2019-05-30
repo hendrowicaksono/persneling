@@ -1,8 +1,12 @@
 <?php 
 require "vendor/autoload.php";
 
+<<<<<<< HEAD
 #$dbs = new PDO('mysql:host=172.17.0.3; dbname=slims_uin_maliki; charset=utf8mb4', 'root', 'mypassword');
 $dbs = new PDO('mysql:host=172.17.0.2; dbname=slims8_akasia_dev_85; charset=utf8mb4', 'root', 'mypassword');
+=======
+$dbs = new PDO('mysql:host=localhost; dbname=yourslimsdb; charset=utf8mb4', 'dbuser', 'dbpassword');
+>>>>>>> dfaf6ab021512cbc909575172ef6f6ff82c71668
 $dbs->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $dbs->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 

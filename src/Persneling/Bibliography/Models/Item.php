@@ -389,7 +389,10 @@ class Item
         } else {
           $items[$key]['item_status'] = $value['item_status_name'];
         }
+<<<<<<< HEAD
         $items[$key]['no_loan'] = $value['no_loan'];
+=======
+>>>>>>> dfaf6ab021512cbc909575172ef6f6ff82c71668
         $items[$key]['order_number'] = $value['order_no'];
         $items[$key]['order_date'] = $value['order_date'];
         $items[$key]['received_date'] = $value['received_date'];
